@@ -1,17 +1,10 @@
 # Landing Page Project
- 
-<hr>
 
 ## Project Description
 
-<hr>
-
 <p>This project is a multi-section landing page with a dynamically updating navigational menu based on the amount of content that is added to the page.</p>
 
-
 ## Main Functions
-
-<hr>
 
 ```Javascript
 function buildListItems(){} //Adds navigation link for every section on the page dynamically
@@ -26,8 +19,6 @@ function scrollToId(target){} //Scrolls to a section if the corresponding nav li
 ```
 
 ## Features
-
-<hr>
 
 - A scroll to top button is added which is only visible when the user scrolls 400 pixels below.
 - Navigation bar disappears after 1.5 seconds of not scrolling.
