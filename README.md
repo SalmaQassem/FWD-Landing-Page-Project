@@ -1,13 +1,36 @@
 # Landing Page Project
+ 
+<hr>
 
-## Table of Contents
+## Project Description
 
-* [Instructions](#instructions)
+<hr>
 
-## Instructions
+<p>This project is a multi-section landing page with a dynamically updating navigational menu based on the amount of content that is added to the page.</p>
 
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
 
-To get started, open `js/app.js` and start building out the app's functionality
+## Main Functions
 
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
+<hr>
+
+```Javascript
+function buildListItems(){} //Adds navigation link for every section on the page dynamically
+```
+
+```Javascript
+function makeActive(){} //Apply active state on the current visited section and corresponding nav link
+```
+
+```Javascript
+function scrollToId(target){} //Scrolls to a section if the corresponding nav link is clicked
+```
+
+## Features
+
+<hr>
+
+- A scroll to top button is added which is only visible when the user scrolls 400 pixels below.
+- Navigation bar disappears after 1.5 seconds of not scrolling.
+- An active state is added to navigation items when a section is in the viewport.
+
+&copy; 2023 Salma Qassem. All Rights Reserved.

@@ -80,6 +80,7 @@ section {
     font-weight: bold;
     text-decoration: none;
     color: #000;
+    cursor: pointer;
 }
 
 .navbar__menu .menu__link:hover {
@@ -221,11 +222,10 @@ section.active .landing__container::after {
     opacity: 1;
     animation: rotate 5s linear 0s infinite forwards reverse;
 }
-.menu__link.active-link {
-    background-color: black;
-    color: white;
+.navbar__menu .menu__link.activeLink {
+    background: #333;
+    color: #fff;
 }
-
 /* Section Active Styles Keyframe Animations */
 @keyframes rotate {
     from {

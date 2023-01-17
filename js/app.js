@@ -44,7 +44,7 @@ let scrollingTimer;
 function buildListItems(){
     sections.forEach(function (section){
         let listItem = document.createElement("li");
-        listItem.innerHTML = `<a href="#${section.getAttribute("id")}" data-nav="${section.getAttribute("data-nav")}" class="menu__link">${section.getAttribute("data-nav")}</a>`;
+        listItem.innerHTML = `<a data-nav="${section.getAttribute("data-nav")}" class="menu__link">${section.getAttribute("data-nav")}</a>`;
 
         navbar.appendChild(listItem);
     });
@@ -56,19 +56,19 @@ function makeActive(){
         const box = section.getBoundingClientRect();
         if (box.top <= 150 && box.top >= -400) {
             section.classList.add("active");
-            navItem.classList.add("active-link");
+            navItem.classList.add("activeLink");
         }
         else {
             section.classList.remove("active");
-            navItem.classList.remove("active-link");
+            navItem.classList.remove("activeLink");
         }
     });
 }
 
 // Scroll to anchor ID using scrollTO event
 function scrollToId(target){
-    let id = target.getAttribute("href").substring(1); //get section id without "#"
-    let section = document.getElementById(id);
+    let data = target.getAttribute("data-nav");
+    let section = document.querySelector(`section[data-nav="${data}"]`);
     section.scrollIntoView({
         behavior: "smooth"
     });
